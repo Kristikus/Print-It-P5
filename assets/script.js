@@ -17,7 +17,6 @@ const slides = [
     }
 ]
 
-
 // Creation divs 'dot' in 'dots'
 let dots = document.querySelector('.dots');
 for (let i in slides) {
@@ -41,13 +40,13 @@ function dotChangeRight() {
     }
     else if (i == 0) {
         dotDiv[0].classList.add('dot_selected');
-        dotDiv[3].classList.remove('dot_selected');
+        dotDiv[dotDiv.length-1].classList.remove('dot_selected');
     }
 }
 
 function dotChangeLeft() {
-    if (i == 3) {
-        dotDiv[3].classList.add('dot_selected');
+    if (i == dotDiv.length-1) {
+        dotDiv[dotDiv.length-1].classList.add('dot_selected');
         dotDiv[0].classList.remove('dot_selected');
     }
     else if (i < dotDiv.length - 1) {
