@@ -29,7 +29,7 @@ for (let i in slides) {
 let arrowLeft = document.querySelector('.arrow_left');
 let arrowRight = document.querySelector('.arrow_right');
 let i = 0;
-let dotDiv = (document.getElementsByClassName('dot'));
+let dotDiv = document.getElementsByClassName('dot');
 dotDiv[i].classList.add('dot_selected');   // First dot visible as soon as the page is loaded
 
 
